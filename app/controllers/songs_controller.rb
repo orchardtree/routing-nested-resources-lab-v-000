@@ -12,7 +12,6 @@ class SongsController < ApplicationController
   end
 
   def show
-    binding.pry
     if Song.exists?(params[:id])
       @song = Song.find(params[:id])
     else
